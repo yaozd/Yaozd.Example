@@ -11,9 +11,8 @@ namespace Yaozd.CookieLib
     /// <summary>
     /// 类说明：CookieHelper
     /// 作  者：zd.yao
-    /// 
     /// </summary>
-    public class CookieHelper
+    internal class CookieHelper
     {
         private static readonly string Domain = GetCookieDomain();
 

@@ -41,13 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CookieExtend.cs" />
     <Compile Include="CookieHelper.cs" />
+    <Compile Include="CookiesName.cs" />
+    <Compile Include="CookieVal\RequestUser.cs" />
+    <Compile Include="PublicCon.cs" />
     <Compile Include="Utilities\DEncryptHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entity\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Readme.txt" />
   </ItemGroup>

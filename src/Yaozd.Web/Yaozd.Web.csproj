@@ -91,19 +91,133 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Readme.txt" />
+    <Content Include="Scripts\avatars\Thumbs.db" />
+    <Content Include="Scripts\css\images\Thumbs.db" />
+    <Content Include="Scripts\font\fontawesome-webfont.woff" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\avatars\avatar.png" />
+    <Content Include="Scripts\avatars\avatar1.png" />
+    <Content Include="Scripts\avatars\avatar2.png" />
+    <Content Include="Scripts\avatars\avatar3.png" />
+    <Content Include="Scripts\avatars\avatar4.png" />
+    <Content Include="Scripts\avatars\avatar5.png" />
+    <Content Include="Scripts\avatars\profile-pic.jpg" />
+    <Content Include="Scripts\avatars\user.jpg" />
+    <Content Include="Scripts\css\ace-ie.min.css" />
+    <Content Include="Scripts\css\ace-rtl.min.css" />
+    <Content Include="Scripts\css\ace-skins.min.css" />
+    <Content Include="Scripts\css\ace.min.css" />
+    <Content Include="Scripts\css\bootstrap-editable.css" />
+    <Content Include="Scripts\css\bootstrap-timepicker.css" />
+    <Content Include="Scripts\css\bootstrap.min.css" />
+    <Content Include="Scripts\css\chosen.css" />
+    <Content Include="Scripts\css\colorbox.css" />
+    <Content Include="Scripts\css\colorpicker.css" />
+    <Content Include="Scripts\css\datepicker.css" />
+    <Content Include="Scripts\css\daterangepicker.css" />
+    <Content Include="Scripts\css\dropzone.css" />
+    <Content Include="Scripts\css\font-awesome-ie7.min.css" />
+    <Content Include="Scripts\css\font-awesome.min.css" />
+    <Content Include="Scripts\css\fullcalendar.css" />
+    <Content Include="Scripts\css\images\loading.gif" />
+    <Content Include="Scripts\css\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Scripts\css\jquery-ui-1.10.3.full.min.css" />
+    <Content Include="Scripts\css\jquery.gritter.css" />
+    <Content Include="Scripts\css\select2.css" />
+    <Content Include="Scripts\css\ui.jqgrid.css" />
+    <Content Include="Scripts\images\gallery\image-1.jpg" />
+    <Content Include="Scripts\images\gallery\image-2.jpg" />
+    <Content Include="Scripts\images\gallery\image-3.jpg" />
+    <Content Include="Scripts\images\gallery\image-4.jpg" />
+    <Content Include="Scripts\images\gallery\image-5.jpg" />
+    <Content Include="Scripts\images\gallery\image-6.jpg" />
+    <Content Include="Scripts\images\gallery\thumb-1.jpg" />
+    <Content Include="Scripts\images\gallery\thumb-2.jpg" />
+    <Content Include="Scripts\images\gallery\thumb-3.jpg" />
+    <Content Include="Scripts\images\gallery\thumb-4.jpg" />
+    <Content Include="Scripts\images\gallery\thumb-5.jpg" />
+    <Content Include="Scripts\images\gallery\thumb-6.jpg" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\ace-elements.min.js" />
+    <Content Include="Scripts\js\ace-extra.min.js" />
+    <Content Include="Scripts\js\ace.min.js" />
+    <Content Include="Scripts\js\additional-methods.min.js" />
+    <Content Include="Scripts\js\bootbox.min.js" />
+    <Content Include="Scripts\js\bootstrap-colorpicker.min.js" />
+    <Content Include="Scripts\js\bootstrap-tag.min.js" />
+    <Content Include="Scripts\js\bootstrap-wysiwyg.min.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\js\chosen.jquery.min.js" />
+    <Content Include="Scripts\js\date-time\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\js\date-time\bootstrap-timepicker.min.js" />
+    <Content Include="Scripts\js\date-time\daterangepicker.min.js" />
+    <Content Include="Scripts\js\date-time\moment.min.js" />
+    <Content Include="Scripts\js\dropzone.min.js" />
+    <Content Include="Scripts\js\excanvas.min.js" />
+    <Content Include="Scripts\js\flot\jquery.flot.min.js" />
+    <Content Include="Scripts\js\flot\jquery.flot.pie.min.js" />
+    <Content Include="Scripts\js\flot\jquery.flot.resize.min.js" />
+    <Content Include="Scripts\js\fuelux\data\fuelux.tree-sampledata.js" />
+    <Content Include="Scripts\js\fuelux\fuelux.spinner.min.js" />
+    <Content Include="Scripts\js\fuelux\fuelux.tree.min.js" />
+    <Content Include="Scripts\js\fuelux\fuelux.wizard.min.js" />
+    <Content Include="Scripts\js\fullcalendar.min.js" />
+    <Content Include="Scripts\js\html5shiv.js" />
+    <Content Include="Scripts\js\jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="Scripts\js\jqGrid\jquery.jqGrid.min.js" />
+    <Content Include="Scripts\js\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\js\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="Scripts\js\jquery-ui-1.10.3.full.min.js" />
+    <Content Include="Scripts\js\jquery.autosize.min.js" />
+    <Content Include="Scripts\js\jquery.colorbox-min.js" />
+    <Content Include="Scripts\js\jquery.dataTables.bootstrap.js" />
+    <Content Include="Scripts\js\jquery.dataTables.min.js" />
+    <Content Include="Scripts\js\jquery.easy-pie-chart.min.js" />
+    <Content Include="Scripts\js\jquery.gritter.min.js" />
+    <Content Include="Scripts\js\jquery.hotkeys.min.js" />
+    <Content Include="Scripts\js\jquery.inputlimiter.1.3.1.min.js" />
+    <Content Include="Scripts\js\jquery.knob.min.js" />
+    <Content Include="Scripts\js\jquery.maskedinput.min.js" />
+    <Content Include="Scripts\js\jquery.mobile.custom.min.js" />
+    <Content Include="Scripts\js\jquery.nestable.min.js" />
+    <Content Include="Scripts\js\jquery.slimscroll.min.js" />
+    <Content Include="Scripts\js\jquery.sparkline.min.js" />
+    <Content Include="Scripts\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="Scripts\js\jquery.validate.min.js" />
+    <Content Include="Scripts\js\markdown\bootstrap-markdown.min.js" />
+    <Content Include="Scripts\js\markdown\markdown.min.js" />
+    <Content Include="Scripts\js\respond.min.js" />
+    <Content Include="Scripts\js\select2.min.js" />
+    <Content Include="Scripts\js\typeahead-bs2.min.js" />
+    <Content Include="Scripts\js\x-editable\ace-editable.min.js" />
+    <Content Include="Scripts\js\x-editable\bootstrap-editable.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -113,8 +227,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{07ce45c8-d556-47cc-b3ef-349025a6f646}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Yaozd.CookieLib\Yaozd.CookieLib.csproj">
+      <Project>{74bd3e01-ac70-4f2e-8faf-75b2b6d4fce6}</Project>
+      <Name>Yaozd.CookieLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Yaozd.Model\Yaozd.Model.csproj">
+      <Project>{1807cafc-1249-470b-8c9a-8c35c0bb82e1}</Project>
+      <Name>Yaozd.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Yaozd.Web.Service\Yaozd.Web.Service.csproj">
+      <Project>{741a707f-2513-412a-9f1d-8c96a94998af}</Project>
+      <Name>Yaozd.Web.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
