@@ -33,8 +33,8 @@ namespace Yaozd.CookieLib
             {
                 cookie.Domain = Domain;
                 cookie.Expires = DateTime.Now.AddYears(-30);
-                HttpContext.Current.Response.Cookies.Add(cookie);
                 HttpContext.Current.Response.Cookies.Remove(cookie.Name);
+                HttpContext.Current.Response.Cookies.Add(cookie);
             }
         }
         /// <summary>
@@ -51,8 +51,9 @@ namespace Yaozd.CookieLib
                 {
                     cookie.Domain = Domain;
                     cookie.Expires = DateTime.Now.AddYears(-30);
-                    HttpContext.Current.Response.Cookies.Add(cookie);
                     HttpContext.Current.Response.Cookies.Remove(cookie.Name);
+                    HttpContext.Current.Response.Cookies.Add(cookie);
+
                 }
 
             }
