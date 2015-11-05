@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Yaozd.Web.Filters;
 
 namespace Yaozd.Web.Controllers
 {
+    [AuthorizeFilter]
     public class HomeController : Controller
     {
         //

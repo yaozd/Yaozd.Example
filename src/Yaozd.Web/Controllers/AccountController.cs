@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using DotNet.Utilities.Serialize;
 using Yaozd.CookieLib;
 using Yaozd.Model;
+using Yaozd.Web.Extendsions;
 using Yaozd.Web.Models;
 using Yaozd.Web.Service;
 
@@ -38,7 +39,7 @@ namespace Yaozd.Web.Controllers
                 var user =  UserManager.Find(model.UserName, model.Password);
                 if (user != null)
                 {
-                    SetCookieUserInfo(user, model.RememberMe);
+                    HttpRequestExt.SetLogin(user, model.RememberMe);
                     return RedirectToLocal(returnUrl);
                 }
                 else
@@ -46,19 +47,17 @@ namespace Yaozd.Web.Controllers
                     ModelState.AddModelError("Password", "用户名或密码错误");
                 }
             }
-
             // 如果我们进行到这一步时某个地方出错，则重新显示表单
             return View(model);
         }
-        private void SetCookieUserInfo(User user, bool rememberMe)
-        {
-            var item = new CookieLib.CookieVal.RequestUser {Id = user.Id, Name = user.Name};
-            var minutes = rememberMe ? 60*24*365 : 60;
-            var cookievalue = SerializeHelper.ToJson(item);
-            CookieExtend.ClearCookieAll();//清空全部
-            CookieExtend.SetCookie(CookiesName.UserInfo,cookievalue,minutes);//添加用户信息
-        }
 
+        //
+        // GET: /Account/Logout
+        public ActionResult Logout()
+        {
+            HttpRequestExt.Logout();
+            return RedirectToAction("Login", "Account");
+        }
         private ActionResult RedirectToLocal(string returnUrl)
         {
             if (Url.IsLocalUrl(returnUrl))
