@@ -14,13 +14,13 @@ namespace Yaozd.CookieLib
             return ConfigurationManager.AppSettings[name];
         }
         /// <summary>
-        /// Cookie前缀--默认值"t."
+        /// Cookie前缀--默认值"_."
         /// </summary>
         /// <returns></returns>
         public static string CookiePrefix()
         {
-            var settingVal = AppSetting("Cookie_Prefix");
-            return settingVal ?? "t.";
+            var settingVal = AppSetting("Cookie_Prefix")?? "_";
+            return settingVal+".";
         }
         /// <summary>
         /// Cookie是否加密--默认值true
