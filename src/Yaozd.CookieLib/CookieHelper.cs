@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 
 namespace Yaozd.CookieLib
@@ -31,9 +27,9 @@ namespace Yaozd.CookieLib
             HttpCookie cookie = HttpContext.Current.Request.Cookies[cookiename];
             if (cookie != null)
             {
+                HttpContext.Current.Response.Cookies.Remove(cookie.Name);
                 cookie.Domain = Domain;
                 cookie.Expires = DateTime.Now.AddYears(-30);
-                HttpContext.Current.Response.Cookies.Remove(cookie.Name);
                 HttpContext.Current.Response.Cookies.Add(cookie);
             }
         }
@@ -49,11 +45,10 @@ namespace Yaozd.CookieLib
                 HttpCookie cookie = HttpContext.Current.Request.Cookies[0];
                 if (cookie != null)
                 {
+                    HttpContext.Current.Response.Cookies.Remove(cookie.Name);
                     cookie.Domain = Domain;
                     cookie.Expires = DateTime.Now.AddYears(-30);
-                    HttpContext.Current.Response.Cookies.Remove(cookie.Name);
                     HttpContext.Current.Response.Cookies.Add(cookie);
-
                 }
 
             }
