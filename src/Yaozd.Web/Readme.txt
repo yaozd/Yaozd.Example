@@ -20,3 +20,13 @@ Models->AccountViewModel->login
         return null;
 
     }
+
+
+	===========================
+Shared Layout
+命名：
+	_Footer.cshtml
+	_Layout.cshtml
+	_Layout_bk.cshtml
+	_LayoutIndex.cshtml
+	_LayoutLogin.cshtml

@@ -1,0 +1,37 @@
+﻿<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8" />
+    <title>登录页面 - 业务监控Cat</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- basic styles -->
+
+    <link href="/scripts/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/scripts/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="/scripts/css/ace.min.css" />
+    <link rel="stylesheet" href="/scripts/css/ace-rtl.min.css" />
+
+</head>
+
+<body class="login-layout">
+    <div class="main-container">
+        @RenderBody()
+    </div><!-- /.main-container -->
+    <!-- basic scripts -->
+    <script src="/scripts/js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+
+    <!-- inline scripts related to this page -->
+    <script type="text/javascript">
+        $(function () {
+            $('#btnLogin').click(function () {
+                $('#login-form').submit();
+            });
+        });
+    </script>
+</body>
+</html>
