@@ -27,7 +27,7 @@ namespace Yaozd.CookieLib
             HttpCookie cookie = HttpContext.Current.Request.Cookies[cookiename];
             if (cookie != null)
             {
-                HttpContext.Current.Response.Cookies.Remove(cookie.Name);
+                //HttpContext.Current.Response.Cookies.Remove(cookie.Name);
                 cookie.Domain = Domain;
                 cookie.Expires = DateTime.Now.AddYears(-30);
                 HttpContext.Current.Response.Cookies.Add(cookie);
@@ -45,7 +45,7 @@ namespace Yaozd.CookieLib
                 HttpCookie cookie = HttpContext.Current.Request.Cookies[0];
                 if (cookie != null)
                 {
-                    HttpContext.Current.Response.Cookies.Remove(cookie.Name);
+                    //HttpContext.Current.Response.Cookies.Remove(cookie.Name);
                     cookie.Domain = Domain;
                     cookie.Expires = DateTime.Now.AddYears(-30);
                     HttpContext.Current.Response.Cookies.Add(cookie);
